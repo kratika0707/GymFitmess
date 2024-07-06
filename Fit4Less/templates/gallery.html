@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}
+Gallery
+{% endblock title %}
+{% block head %}
+
+<div class="container">
+
+<Center><h1>Gallery</h1></Center>
+<div class="row mt-2">
+
+    {% for post in posts  %}  
+    <div class="col-md-4">
+    
+    
+        <div class="card">
+          <div style="margin-top: 2; width: 300px;">
+            <img src="{{post.img.url}}" class="card-img-top " alt="...">
+            </div>
+
+          </div>
+    
+    
+    </div>
+    {% endfor %}
+    <br>
+    <br>
+
+</div>
+</div>
+
+
+{% endblock head %}
